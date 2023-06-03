@@ -32,7 +32,7 @@ namespace ProblematicProblem
 
             userResponse = Console.ReadLine().ToLower();
 
-            if (userResponse == "Sure")
+            if (userResponse == "sure")
             {
                 foreach (string activity in activities)
                 {
@@ -42,6 +42,7 @@ namespace ProblematicProblem
                 Console.WriteLine();
                 Console.Write("Would you like to add any activities before we generate one? yes/no: ");
                 userResponse = Console.ReadLine().ToLower();
+                Console.WriteLine();
                 while (userResponse != "no")
                 {
                     Console.Write("What would you like to add? ");
